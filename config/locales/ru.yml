@@ -1,0 +1,114 @@
+ru:
+  admin:
+    shared:
+      contents_tab:
+        content: 'Блоги'
+    subnav:
+      uploads: 'Загрузки'
+    uploads:
+      new:
+        new_upload: 'Новая загрузка'
+      edit:
+        edit_upload: 'Редактировать загрузку'
+        preview: 'Просмотр'
+        link: 'Ссылка'
+      index:
+        listing_uploads: 'Список загрузок'
+        new_upload: 'Загрузить файл'
+  post:
+    model_name: 'Пост'
+    title: 'Заголовок'
+    posted_at: 'Создан'
+    body: 'Текст'
+    live: 'Опубликован'
+    tags: 'Таги'
+  post_category:
+    model_name: 'Категория'
+    name: Название
+    permalink: Пермалинк
+
+  admin:
+    subnav:
+      posts: Посты
+
+  blog:
+    admin:
+      posts:
+        new:
+          new_post: Новый пост
+        listing: Список постов
+      post_products:
+        index:
+          add_related_product: Все связанные продукты      
+      post_categories:
+        index:
+          manage_categories: Управление категориями
+      new:
+        new_category: Новая категория
+      edit:
+        edit_category: Редактировать категорию
+
+      shared:
+        post_tabs:
+          post_details: Описание поста
+          editing_post: Редактирование поста
+          related_products: Связанные продукты
+          post_categories: Категории
+    comments: Комментарии
+    home:
+      title: Текущие посты
+    archive: Архив блога
+    no_posts: Посты не найдены!
+    posts:
+      model_name: Пост
+      index:
+        blog: Блог
+        rss: Подписаться на RSS
+      archive:
+        where_to_next: Where to next?
+        go_to_store: "Вернуться в магазин"
+        back_to_posts: "Вернуться в блог"           
+    settings:
+      disqus: Настройки Disqus
+      explain_disqus: Настроить Disqus комментарии для блога
+      disqus_shortname: Disqus идентификатор сайта
+    shared:
+      sidebar: 
+        recent_posts: Последние посты
+        categories: Категории
+        archives: Архив
+        view_archive: Просмотреть весь архив
+        tags: Таги        
+      preview: 
+        read_more: Читать дальше
+      post_tabs:
+        editing_post: Редактирование поста
+        post_details: Подробно о посте
+        related_products: Связанные продукты
+        post_categories: Категории
+    subnav:
+      posts: Посты блога
+  
+  upload:
+    model_name: Загрузка
+    file_name: Имя файла
+    size: Размер
+
+  admin:
+    shared:
+      contents_tab:
+        content: Блог
+
+    subnav:
+      uploads: Загрузки      
+
+    uploads:
+      new:
+        new_upload: Новая загрузка
+      edit:
+        edit_upload: Редактировать загрузку
+        preview: Предпросмотр
+        link: Ссылка
+      index:
+        listing_uploads: Список загрузок
+        new_upload: Загрузить файл

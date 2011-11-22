@@ -18,6 +18,7 @@ module Blog::PostsHelper
   end
   
   def date_full(date)
+    return Russian.strftime(date, '%A %B %d, %Y').gsub(/\s0/, ' ') if I18n.locale == :ru
     date.strftime('%A %B %d, %Y').gsub(/\s0/, ' ')
   end
 

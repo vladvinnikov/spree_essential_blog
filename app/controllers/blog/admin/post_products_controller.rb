@@ -6,7 +6,7 @@ class Blog::Admin::PostProductsController < Admin::BaseController
     position = @post.products.count
     @product = Variant.find(params[:variant_id]).product
     PostProduct.create(:post_id => @post.id, :product_id => @product.id, :position => position)
-    render :partial => "admin/blog/post_products/related_products_table", :locals => { :post => @post }, :layout => false 
+    render :partial => "related_products_table", :locals => { :post => @post }, :layout => false 
   end
     
   def destroy

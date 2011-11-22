@@ -5,6 +5,7 @@ ru:
         content: 'Блоги'
     subnav:
       uploads: 'Загрузки'
+      posts: 'Посты'
     uploads:
       new:
         new_upload: 'Новая загрузка'

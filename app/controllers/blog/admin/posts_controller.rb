@@ -1,6 +1,6 @@
 class Blog::Admin::PostsController < Admin::ResourceController
   
-  include Blog::PostsHelper
+  helper Blog::PostsHelper
   
   private
     

@@ -5,7 +5,7 @@
 <div class="post">
   
   <div class="post-title">
-    <h5><%= h @post.posted_at.strftime('%A %B %d, %Y').gsub(/\s0/, ' ') %></h5> 
+    <h5><%= date_full(@post.posted_at) %></h5> 
     <h1><%=h @post.title %></h1>
   </div>
   

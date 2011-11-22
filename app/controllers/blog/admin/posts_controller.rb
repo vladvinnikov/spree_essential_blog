@@ -1,5 +1,7 @@
 class Blog::Admin::PostsController < Admin::ResourceController
   
+  include Blog::PostsHelper
+  
   private
     
     update.before :set_category_ids

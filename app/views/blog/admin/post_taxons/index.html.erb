@@ -5,7 +5,7 @@
       <legend><%= t('.add_related_taxon') %></legend>
       <div style="float:left;width:55%;margin-right:5%;">
         <%= label_tag :taxon_id, t("name") %>
-        <%= select_tag "taxon_id", options_from_collection_for_select(Taxon.all, "id", "name"), :include_blank => true  %>
+        <%= select_tag "taxon_id", options_from_collection_for_select(Taxon.all, "id", "name"), :include_blank => true, :class => "fullwidth title"  %>
       </div>
       <div style="float: left; width: 15%; padding-top: 17px;">
         <%= link_to text_for_button_link(t("add"), :icon => 'add'),

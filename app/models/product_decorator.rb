@@ -7,4 +7,12 @@ Product.class_eval do
     all_posts = all_taxons.map(&:posts).flatten
     all_posts.uniq
   end
+  
+  def all_posts_count
+    posts.count + taxonomy_posts.count
+  end
+  
+  def have_any_posts?
+    all_posts_count > 0
+  end
 end

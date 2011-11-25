@@ -10,6 +10,10 @@ class Post < ActiveRecord::Base
   
   has_many :post_products, :dependent => :destroy
   has_many :products, :through => :post_products
+  
+  has_many :post_taxons, :dependent => :destroy
+  has_many :taxons, :through => :post_taxons
+  
   has_many :images, :as => :viewable, :class_name => 'PostImage', :order => :position, :dependent => :destroy
   
   validates :title, :presence => true

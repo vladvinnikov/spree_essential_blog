@@ -5,7 +5,7 @@ require 'spree_essential_blog/custom_hooks'
 module SpreeEssentialBlog
 
   def self.tab
-    [:posts, :post_images, :post_products ]
+    [:posts, :post_images, :post_products, :post_taxons ]
   end
   
   def self.sub_tab

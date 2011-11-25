@@ -40,7 +40,10 @@ ru:
         listing: Список постов
       post_products:
         index:
-          add_related_product: Все связанные продукты      
+          add_related_product: Все связанные продукты
+      post_taxons:
+        index:
+          add_related_taxon: Все связанные таксоны      
       post_categories:
         index:
           manage_categories: Управление категориями
@@ -54,6 +57,7 @@ ru:
           post_details: Описание поста
           editing_post: Редактирование поста
           related_products: Связанные продукты
+          related_taxons: Связанные таксоны
           post_categories: Категории
     comments: Комментарии
     home:
@@ -86,6 +90,7 @@ ru:
         editing_post: Редактирование поста
         post_details: Подробно о посте
         related_products: Связанные продукты
+        related_taxons: Связанные таксоны
         post_categories: Категории
     subnav:
       posts: Посты блога

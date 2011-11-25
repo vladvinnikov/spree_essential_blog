@@ -27,6 +27,7 @@ Rails.application.routes.draw do
           end
         end
         resources :products, :controller => "post_products"
+        resources :taxons, :controller => "post_taxons"
         resources :categories, :controller => "post_categories"
       end
       

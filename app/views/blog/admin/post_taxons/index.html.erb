@@ -1,0 +1,44 @@
+<%= render :partial => 'blog/admin/shared/post_tabs', :locals => {:current => "Related Taxons"} %>
+
+  <div id="add-line-item">
+    <fieldset>
+      <legend><%= t('.add_related_taxon') %></legend>
+      <div style="float:left;width:55%;margin-right:5%;">
+        <%= label_tag :taxon_id, t("name") %>
+        <%= select_tag "taxon_id", options_from_collection_for_select(Taxon.all, "id", "name"), :include_blank => true  %>
+      </div>
+      <div style="float: left; width: 15%; padding-top: 17px;">
+        <%= link_to text_for_button_link(t("add"), :icon => 'add'),
+            admin_post_taxons_path(@post),
+            :id => "add_related_taxon", :class => 'button' %>
+      </div>
+    </fieldset>
+  </div>
+  
+  <div id="taxons-table-wrapper">
+    <%= render :partial => "related_taxons_table", :locals => { :post => @post } %>
+  </div>
+  
+  <% content_for :head do %>
+
+    <%= csrf_meta_tag %>
+   
+    <script type="text/javascript">
+    
+      jQuery(document).ready(function(){
+        
+        $("#add_related_taxon").live("click", function(){
+          jQuery.ajax({ url: this.href, type: "POST",
+              data: { 'taxon_id' : $('#taxon_id').val() },
+              success: function(data){
+                $('#taxons-table-wrapper').html(data);
+                $("#taxon_id option:first").attr('selected','selected');
+              }
+          });
+          return false;
+        });
+        
+      
+      });
+    </script>
+  <% end %>

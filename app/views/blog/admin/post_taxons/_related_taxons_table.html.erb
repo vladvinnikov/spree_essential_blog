@@ -1,0 +1,18 @@
+<table class="index">
+  <thead>
+    <tr>
+      <th><%= t('name') %></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% post.post_taxons.each do |post_taxon| %>
+      <tr id="<%= dom_id post_taxon %>">
+        <td><%= post_taxon.taxon.name %></td>
+        <td width="70px">
+          <%= link_to_delete post_taxon, {:url => admin_post_taxon_url(post, post_taxon)} %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

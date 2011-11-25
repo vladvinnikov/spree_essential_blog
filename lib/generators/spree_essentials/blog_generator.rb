@@ -10,6 +10,7 @@ module SpreeEssentials
       def copy_migrations
         migration_template "create_posts.rb",                 "db/migrate/create_posts.rb"
         migration_template "create_post_products.rb",         "db/migrate/create_post_products.rb"
+        migration_template "create_post_taxons.rb",         "db/migrate/create_post_taxons.rb"
         migration_template "acts_as_taggable_on_posts.rb",    "db/migrate/acts_as_taggable_on_posts.rb"
         migration_template "create_post_categories.rb",       "db/migrate/create_post_categories.rb"
         migration_template "create_post_categories_posts.rb", "db/migrate/create_post_categories_posts.rb"

@@ -17,6 +17,9 @@
       </li>     
       <li<%= ' class="active"'.html_safe if current == "Related Products" %>>
         <%= link_to t(".related_products"), admin_post_products_url(@post) %>
+      </li>
+      <li<%= ' class="active"'.html_safe if current == "Related Taxons" %>>
+        <%= link_to t(".related_taxons"), admin_post_taxons_url(@post) %>
       </li> 
       <li<%= ' class="active"'.html_safe if current == "Categories" %>>
         <%= link_to t(".post_categories"), admin_post_categories_url(@post) %>

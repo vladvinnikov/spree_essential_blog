@@ -3,7 +3,7 @@ class Blog::Admin::PostTaxonsController < Admin::BaseController
   before_filter :load_data
   
   def create
-    position = @post.products.count
+    position = @post.taxons.count
     @taxon = Taxon.find(params[:taxon_id])
     PostTaxon.create(:post_id => @post.id, :taxon_id => @taxon.id, :position => position)
     render :partial => "related_taxons_table", :locals => { :post => @post }, :layout => false 

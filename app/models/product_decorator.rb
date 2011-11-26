@@ -9,7 +9,7 @@ Product.class_eval do
   end
   
   def all_posts_count
-    posts.count + taxonomy_posts.count
+    @all_posts_count ||= posts.count + taxonomy_posts.count
   end
   
   def have_any_posts?

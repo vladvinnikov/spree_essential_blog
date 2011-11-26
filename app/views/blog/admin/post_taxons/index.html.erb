@@ -22,10 +22,13 @@
   <% content_for :head do %>
 
     <%= csrf_meta_tag %>
-   
+    <%= javascript_include_tag 'admin/chosen/chosen.jquery.js' %>
+    <%= stylesheet_link_tag 'admin/chosen/chosen.css' %>
+    
     <script type="text/javascript">
     
       jQuery(document).ready(function(){
+        $("#taxon_id").chosen();
         
         $("#add_related_taxon").live("click", function(){
           jQuery.ajax({ url: this.href, type: "POST",
